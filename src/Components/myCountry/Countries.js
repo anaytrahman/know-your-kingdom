@@ -76,11 +76,11 @@ const Countries = () => {
 
 
     return (
-        <div className="main-container">
+        <div className="">
             <div className="action-wrapper">
                 <div className="cards-wrapper">{
                     showCountry === false ? 
-                    <h3 className="warning">Search and Know about Your Country</h3>:
+                    <h3 className="">Search and Know about Your Country</h3>:
                     <h3 className="warning">Click on Show All countries button To Continue..</h3>
                    
                 }
