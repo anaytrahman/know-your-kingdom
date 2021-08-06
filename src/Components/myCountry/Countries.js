@@ -1,10 +1,7 @@
 import TextField from '@material-ui/core/TextField';
 import { useEffect, useRef, useState } from 'react';
 import A from './A';
-// import Paper from '@material-ui/core/Paper';
-// import Fade from '@material-ui/core/Fade';
-// import { makeStyles } from '@material-ui/core/styles';
-// const [checked, setChecked] = React.useState(false);
+
 
 import ShowCountries from './ShowCountries';
 const Countries = () => {
@@ -16,8 +13,7 @@ const Countries = () => {
 
     const [errMsg, setErrMsg] = useState(false);
 
-    // const classes = useStyles();
-
+   
 
     const searchInp = useRef(null);
     useEffect(() => {
