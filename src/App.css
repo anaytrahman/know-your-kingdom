@@ -1,0 +1,131 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.App{
+  width: 80%;
+  margin:  0 auto;
+  padding: 2rem;
+  
+}
+
+.App-header{
+  height: 60px;
+  background-color: grey;
+ 
+  padding: 1rem;
+}
+
+.main-container{
+  padding: 1rem;
+    background: #d3d2d2;
+    border-radius: 4px;
+}
+
+.input{
+  width: 40%;
+}
+/* .btns{
+  font-size: 10px;
+} */
+
+.search-wrapper {
+  background: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.btn-wrap > * {
+   margin: 0 10px ;
+}
+
+.boxes{
+  /* max-width: 15rem; */
+  
+  background-color: white;
+  margin: 8rem 0;
+  padding: 10px 45px;
+  border-radius: 5px;
+}
+h3{
+  text-align: center;
+}
+
+
+
+.main-details{
+  border-bottom: solid #fbfbfb;
+ 
+  
+}
+
+.main-details > *{
+  margin: 2rem 0 ;
+}
+
+.cont-name{
+ 
+  padding: 10px 0;
+}
+
+.cont-flag{
+  max-width: 100px;
+ 
+}
+.cont-flag img{
+  max-width: 100%;
+  border-radius: 7px;
+}
+h6{
+  text-align: center;
+}
+
+.warning{
+  color: red;
+  font-weight: 1000;
+}
+
+.D-flex{
+  display: flex;
+}
+
+.Justify-Spa-bet{
+  justify-content: space-between;
+}
+
+.cards-wrapper {
+  box-shadow: #f6f6f6fc 1px 0px 0px 4px;
+  padding: 3px 13px;
+  background: #f6f6f6fc;
+  border-radius: 4px;
+  margin: 20px 0;
+  text-align: center;
+}
+/* if(searchData === ''){
+  return val;
+} else if(
+  val.name.toLowerCase().includes(searchData.toLocaleLowerCase())
+){
+  return val;
+} */
+
+.border{
+  display: inline;
+}
+.btns{
+  margin: 0 10px;
+}
+
+.inline-children > * {
+  margin: 0 5px;
+}
+
+h1{
+  text-align: center;
+  color: red;
+}
+
+.more-details-wrapper{
+
+  transition-delay: 5s;
+}
