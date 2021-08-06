@@ -9,8 +9,6 @@ body{
 }
 
 .App-header{
-  height: 60px;
-  background-color: grey;
  
   padding: 1rem;
 }
@@ -103,7 +101,7 @@ h6{
 
 .cards-wrapper {
   box-shadow: #f6f6f6fc 1px 0px 0px 4px;
-  padding: 3px 13px;
+  padding: 14px 13px;
   background: #f6f6f6fc;
   border-radius: 4px;
   margin: 20px 0;
@@ -136,4 +134,14 @@ h1{
 .more-details-wrapper{
 
   transition-delay: 5s;
+}
+
+.letter-design1 {
+  background-color: red;
+  color: white;
+}
+
+.letter-design{
+  padding: 5px 10px;
+  border-radius: 2px
 }
