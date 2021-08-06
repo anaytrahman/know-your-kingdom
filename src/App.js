@@ -1,4 +1,4 @@
-import Countries from "./Components/country/Countries";
+import Countries from "./Components/myCountry/Countries";
 import './App.css';
 import Header from './Components/header/Header';
 
