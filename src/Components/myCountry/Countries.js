@@ -1,12 +1,9 @@
 import TextField from '@material-ui/core/TextField';
 import { useEffect, useRef, useState } from 'react';
-import A from './A';
-
-
 import ShowCountries from './ShowCountries';
+
 const Countries = () => {
     const [countries, setCountries] = useState([]);
-    const [showMoreDetails, setShowMoreDetails] = useState(false);
     const [searchData, setSearchData] = useState('');
 
     const [showCountry, setShowCountry] = useState(false);
@@ -16,6 +13,7 @@ const Countries = () => {
    
 
     const searchInp = useRef(null);
+
     useEffect(() => {
 
         fetch('https://restcountries.eu/rest/v2/all')
@@ -126,12 +124,10 @@ const Countries = () => {
 
 
             <ShowCountries
-
                 countries={countries}
                 showCountry={showCountry}
                 filteredCountry={filteredCountry}
             />
-            {/* <A nium={124} hidauy={"hi i am hidayt"} countries={countries} /> */}
 
         </div>
     )
