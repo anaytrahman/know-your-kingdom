@@ -1,10 +1,12 @@
-import TextField from '@material-ui/core/TextField';
+import {CircularProgress, TextField} from '@material-ui/core';
 import { useEffect, useRef, useState } from 'react';
 import ShowCountries from './ShowCountries';
 
 const Countries = () => {
     const [countries, setCountries] = useState([]);
     const [searchData, setSearchData] = useState('');
+
+    const [loader, setLoader] = useState(false);
 
     const [showCountry, setShowCountry] = useState(false);
 
@@ -15,19 +17,20 @@ const Countries = () => {
     const searchInp = useRef(null);
 
     useEffect(() => {
-
+        setLoader(true);
         fetch('https://restcountries.eu/rest/v2/all')
             .then(res => res.json())
             .then((result) => {
                 setCountries(result);
                 console.log('result', result)
-
+                setLoader(false);
                 localStorage.setItem("countries", JSON.stringify(result));
 
             }).catch(e => {
                 const dataFromLocalStorage = JSON.parse(localStorage.getItem("countries"));
                 console.log('localStro', dataFromLocalStorage)
                 setCountries(dataFromLocalStorage);
+                setLoader(false);
             });
 
         if (filteredCountry.length > 0) {
@@ -120,10 +123,13 @@ const Countries = () => {
             {/* country show */}
 
 
-
+            {
+                loader && <CircularProgress />
+            }
 
 
             <ShowCountries
+            loader={loader}
                 countries={countries}
                 showCountry={showCountry}
                 filteredCountry={filteredCountry}

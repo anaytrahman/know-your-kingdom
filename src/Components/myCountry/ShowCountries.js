@@ -1,5 +1,5 @@
 import { useState } from 'react'
-const ShowCountries = ({ showCountry, countries, filteredCountry }) => {
+const ShowCountries = ({ showCountry, countries, filteredCountry, loader }) => {
     const [showMoreDetails, setShowMoreDetails] = useState(false);
     return (
         <>
@@ -13,7 +13,7 @@ const ShowCountries = ({ showCountry, countries, filteredCountry }) => {
                             <h3 className="heading-wrapper">Country List</h3>
                         }
 
-                        {filteredCountry.length === 0 &&
+                        {!loader && filteredCountry.length === 0 &&
                             <div>
                                 <h1>No country Record found!!!</h1>
                             </div>
