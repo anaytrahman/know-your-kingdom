@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/know-your-kingdom/static/css/main.4ddb1c22.chunk.css",
-    "main.js": "/know-your-kingdom/static/js/main.35d805b9.chunk.js",
-    "main.js.map": "/know-your-kingdom/static/js/main.35d805b9.chunk.js.map",
+    "main.css": "/know-your-kingdom/static/css/main.74ebbf76.chunk.css",
+    "main.js": "/know-your-kingdom/static/js/main.9e05cbf8.chunk.js",
+    "main.js.map": "/know-your-kingdom/static/js/main.9e05cbf8.chunk.js.map",
     "runtime-main.js": "/know-your-kingdom/static/js/runtime-main.b16c0387.js",
     "runtime-main.js.map": "/know-your-kingdom/static/js/runtime-main.b16c0387.js.map",
     "static/js/2.9eb4f2a0.chunk.js": "/know-your-kingdom/static/js/2.9eb4f2a0.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.a90f13ca.chunk.js": "/know-your-kingdom/static/js/3.a90f13ca.chunk.js",
     "static/js/3.a90f13ca.chunk.js.map": "/know-your-kingdom/static/js/3.a90f13ca.chunk.js.map",
     "index.html": "/know-your-kingdom/index.html",
-    "static/css/main.4ddb1c22.chunk.css.map": "/know-your-kingdom/static/css/main.4ddb1c22.chunk.css.map",
+    "static/css/main.74ebbf76.chunk.css.map": "/know-your-kingdom/static/css/main.74ebbf76.chunk.css.map",
     "static/js/2.9eb4f2a0.chunk.js.LICENSE.txt": "/know-your-kingdom/static/js/2.9eb4f2a0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b16c0387.js",
     "static/js/2.9eb4f2a0.chunk.js",
-    "static/css/main.4ddb1c22.chunk.css",
-    "static/js/main.35d805b9.chunk.js"
+    "static/css/main.74ebbf76.chunk.css",
+    "static/js/main.9e05cbf8.chunk.js"
   ]
 }
