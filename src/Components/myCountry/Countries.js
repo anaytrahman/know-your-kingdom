@@ -10,11 +10,6 @@ const Countries = () => {
 
     const [showCountry, setShowCountry] = useState(false);
 
-    const [errMsg, setErrMsg] = useState(false);
-    
-
-
-
     const searchInp = useRef(null);
 
     useEffect(() => {
@@ -33,10 +28,6 @@ const Countries = () => {
                 setCountries(dataFromLocalStorage);
                 setLoader(false);
             });
-
-        if (filteredCountry.length > 0) {
-            setErrMsg(true)
-        }
 
 
 

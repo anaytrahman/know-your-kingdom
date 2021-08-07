@@ -187,13 +187,8 @@ const ShowCountries = ({ showCountry, countries, filteredCountry, loader }) => {
                                                         </div>
                                                     }
 
-                                                    {
-                                                        countryData.regionalBlocs &&
-                                                        <div className="cards-wrapper">
-                                                            <p className="warning">RegionalBlocs</p>
-                                                            {countryData.acronym}
-                                                        </div>
-                                                    }
+                                                   
+                                                  
 
                                                     {/* fold half details button */}
                                                     <div className="cards-wrapper">
