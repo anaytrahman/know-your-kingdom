@@ -11,7 +11,7 @@ const Countries = () => {
     const [showCountry, setShowCountry] = useState(false);
 
     const [errMsg, setErrMsg] = useState(false);
-    const [progress, setProgress] = useState(0);
+    
 
 
 
