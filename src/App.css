@@ -2,7 +2,6 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 .App{
-  width: 80%;
   margin:  0 auto;
   padding: 2rem;
   
@@ -106,6 +105,7 @@ h6{
   border-radius: 4px;
   margin: 20px 0;
   text-align: center;
+  word-break: break-all;
 }
 /* if(searchData === ''){
   return val;
