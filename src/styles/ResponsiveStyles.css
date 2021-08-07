@@ -3,6 +3,9 @@
         width: 80%;
         margin: 0 auto;
     }
+    .app-name-wrapper .heading{
+        font-size: 25px;
+    }
     .width-sepcl > * {
         width: 18%;
     }
@@ -13,6 +16,10 @@
 }
 
 @media screen and (max-width:481px){
+    .app-name-wrapper .heading{
+        font-size: 18px;
+    }
+
     .D-flex {
         display: block;
     }
@@ -20,48 +27,35 @@
         width: 94%;
         margin: 3rem 0;
     }
-
-    
-
-    /* .cont-flag img {
-        max-width: 16rem;
-        border-radius: 7px;
-    } */
     .cont-flag img {
         max-width: 10rem;
       
     }
-
     .App {
         
         padding: 1px;
     }
-
+    .boxes {
+        padding: 10px 14px;
+    }
     .cards-wrapper  span{
         display: block;
+    }
+
+    .btns {
+        font-size: 13px;
     }
 }
 
 @media screen and (max-width:320px){
     
 
-    .app-name-wrapper .heading{
-        font-size: 18px;
-    }
-
-    .btns {
-       
-        font-size: 13px;
-    }
+   
+   
     .cards-wrapper {
         text-align: unset;
     }
-
-    /* .cards-wrapper h2{
-        font-size: 15px;
-    } */
     .App {
-        /* margin: 0 auto; */
         padding: 1px;
     }
 }
