@@ -1,4 +1,4 @@
-import {CircularProgress, TextField} from '@material-ui/core';
+import { CircularProgress, TextField } from '@material-ui/core';
 import { useEffect, useRef, useState } from 'react';
 import ShowCountries from './ShowCountries';
 
@@ -11,8 +11,9 @@ const Countries = () => {
     const [showCountry, setShowCountry] = useState(false);
 
     const [errMsg, setErrMsg] = useState(false);
+    const [progress, setProgress] = useState(0);
 
-   
+
 
     const searchInp = useRef(null);
 
@@ -36,6 +37,10 @@ const Countries = () => {
         if (filteredCountry.length > 0) {
             setErrMsg(true)
         }
+
+
+
+
     }, []);
 
     const clickHandler = () => {
@@ -58,7 +63,7 @@ const Countries = () => {
             country.name && country.name.toLowerCase().includes(searchDataStr)
             ||
             country.capital && country.capital.toLowerCase().includes(searchDataStr)
-            || 
+            ||
             country.nativeName && country.nativeName.toLowerCase().includes(searchDataStr)
             ||
             altSpelling()[0] && altSpelling()[0].toLowerCase().includes(searchDataStr)
@@ -76,19 +81,19 @@ const Countries = () => {
         <div className="">
             <div className="action-wrapper">
                 <div className="cards-wrapper">{
-                    showCountry === false ? 
-                    <h3 className="">Search and Know about Your Country</h3>:
-                    <h3 className="warning">Click on Show All countries button To Continue..</h3>
-                   
+                    showCountry === false ?
+                        <h3 className="">Search and Know about Your Country</h3> :
+                        <h3 className="warning">Click on Show All countries button To Continue..</h3>
+
                 }
 
                 </div>
                 <div className="search-wrapper">
 
-                    
+
                     <div>
                         {
-                            showCountry === false&&
+                            showCountry === false &&
                             <TextField className="search-input" id="standard-search" label="Eg: India" type="search"
                                 onChange={(e) => {
                                     setSearchData(e.target.value);
@@ -123,13 +128,25 @@ const Countries = () => {
             {/* country show */}
 
 
+           
             {
-                loader && <CircularProgress />
+                loader &&
+                <div className="loader-wrapper">
+                    <div className="progress-wrapper">
+                        <CircularProgress />
+                    </div>
+
+                    <div className="loader-msg-wrapper">
+                        <p>Loading Countries...</p>
+                    </div>
+                </div>
+
+
             }
 
 
             <ShowCountries
-            loader={loader}
+                loader={loader}
                 countries={countries}
                 showCountry={showCountry}
                 filteredCountry={filteredCountry}

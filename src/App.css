@@ -145,3 +145,23 @@ h1{
   padding: 5px 10px;
   border-radius: 2px
 }
+
+/* loader */
+
+.loader-wrapper {
+  /* width: 20%; */
+  margin: 0 auto;
+  background: #f8f9fa;
+  padding: 14px 13px 1px 22px;
+  max-width: 188px;
+  border-radius: 6px;
+}
+
+.loader-width{
+  width: 57px;
+  height: 57px;
+}
+
+.progress-wrapper{
+  margin-left: 3rem;
+}
