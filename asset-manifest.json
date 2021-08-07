@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/know-your-kingdom/static/css/main.3f0d8164.chunk.css",
+    "main.css": "/know-your-kingdom/static/css/main.fc020252.chunk.css",
     "main.js": "/know-your-kingdom/static/js/main.deb9805b.chunk.js",
     "main.js.map": "/know-your-kingdom/static/js/main.deb9805b.chunk.js.map",
     "runtime-main.js": "/know-your-kingdom/static/js/runtime-main.d43b9b69.js",
@@ -10,13 +10,13 @@
     "static/js/3.4e8a5ffe.chunk.js": "/know-your-kingdom/static/js/3.4e8a5ffe.chunk.js",
     "static/js/3.4e8a5ffe.chunk.js.map": "/know-your-kingdom/static/js/3.4e8a5ffe.chunk.js.map",
     "index.html": "/know-your-kingdom/index.html",
-    "static/css/main.3f0d8164.chunk.css.map": "/know-your-kingdom/static/css/main.3f0d8164.chunk.css.map",
+    "static/css/main.fc020252.chunk.css.map": "/know-your-kingdom/static/css/main.fc020252.chunk.css.map",
     "static/js/2.0ff65e68.chunk.js.LICENSE.txt": "/know-your-kingdom/static/js/2.0ff65e68.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d43b9b69.js",
     "static/js/2.0ff65e68.chunk.js",
-    "static/css/main.3f0d8164.chunk.css",
+    "static/css/main.fc020252.chunk.css",
     "static/js/main.deb9805b.chunk.js"
   ]
 }
