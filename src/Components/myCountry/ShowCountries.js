@@ -84,7 +84,9 @@ const ShowCountries = ({ showCountry, countries, filteredCountry, loader }) => {
                                             {
                                                 countryData.borders.length > 0 &&
                                                 <div className="cards-wrapper">
-                                                    <p className="warning">Borders</p> {countryData.borders.join(' / ')}
+                                                    <p className="warning">Borders</p> 
+                                                    <span>{countryData.borders.join(' / ')}</span>
+                                                    
                                                 </div>
                                             }
 
