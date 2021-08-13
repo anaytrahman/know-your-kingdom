@@ -1,38 +1,24 @@
 import { CircularProgress, TextField } from '@material-ui/core';
 import { useEffect, useRef, useState } from 'react';
+import { useFetch } from '../utils/useFetch';
 import ShowCountries from './ShowCountries';
 
 const Countries = () => {
     const [countries, setCountries] = useState([]);
     const [searchData, setSearchData] = useState('');
-
-    const [loader, setLoader] = useState(false);
+    const data = useFetch();
+    const loader = data.loader;
 
     const [showCountry, setShowCountry] = useState(false);
 
     const searchInp = useRef(null);
+    // console.log('searchData', searchInp)
 
+    //getting data from hooks usefetch
     useEffect(() => {
-        setLoader(true);
-        fetch('https://restcountries.eu/rest/v2/all')
-            .then(res => res.json())
-            .then((result) => {
-                setCountries(result);
-                console.log('result', result)
-                setLoader(false);
-                localStorage.setItem("countries", JSON.stringify(result));
-
-            }).catch(e => {
-                const dataFromLocalStorage = JSON.parse(localStorage.getItem("countries"));
-                console.log('localStro', dataFromLocalStorage)
-                setCountries(dataFromLocalStorage);
-                setLoader(false);
-            });
-
-
-
-
-    }, []);
+            setCountries(data.data)
+           
+    }, [data]);
 
     const clickHandler = () => {
         alert('Search button Clicked')
@@ -42,8 +28,8 @@ const Countries = () => {
         setShowCountry(false);
     }
 
-
-    const filteredCountry = countries.filter(country => {
+    console.log('fetchData', data.data)
+    const filteredCountry =  countries!==0 && countries.filter(country => {
         const searchDataStr = searchData.toLocaleLowerCase().trim();
         const altSpelling = () => {
             return country.altSpellings.filter((item) => item === searchData.trim())
@@ -119,7 +105,7 @@ const Countries = () => {
             {/* country show */}
 
 
-           
+
             {
                 loader &&
                 <div className="loader-wrapper">
