@@ -8,14 +8,14 @@ const ShowCountries = ({ showCountry, countries, filteredCountry, loader }) => {
                 <div className="show-c-details">
                     <div>
                         {
-                            countries.length > 0 && filteredCountry.length > 0 &&
+                            countries &&   countries.length > 0 && filteredCountry.length > 0 &&
 
                             <h3 className="heading-wrapper">Country List</h3>
                         }
-
-                        {!loader && filteredCountry.length === 0 &&
+                        {/* filteredCountry.length === 0  */}
+                        {!loader && !filteredCountry &&
                             <div>
-                                <h1>No country Record found!!!</h1>
+                                <h1>Somethig went wrong, No country Record found!!!</h1>
                             </div>
                         }
 
