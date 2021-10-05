@@ -12,7 +12,7 @@ const Countries = () => {
     const [showCountry, setShowCountry] = useState(false);
 
     const searchInp = useRef(null);
-    // console.log('searchData', searchInp)
+
 
     //getting data from hooks usefetch
     useEffect(() => {
@@ -29,7 +29,7 @@ const Countries = () => {
     }
 
     console.log('fetchData', data.data)
-    const filteredCountry =  countries!==0 && countries.filter(country => {
+    const filteredCountry =  countries!==0 && countries && countries.filter(country => {
         const searchDataStr = searchData.toLocaleLowerCase().trim();
         const altSpelling = () => {
             return country.altSpellings.filter((item) => item === searchData.trim())
@@ -88,7 +88,7 @@ const Countries = () => {
                             <button onClick={showHandler} className="btn btn-secondary mt-3 btns mr-4">Show All Countries</button> :
                             <div>
                                 {
-                                    filteredCountry.length > 0 &&
+                                    filteredCountry && filteredCountry.length > 0 &&
                                     <button onClick={() => { setShowCountry(true) }} className="btn btn-danger mt-3 btns mr-4">Hide Countries</button>
 
                                 }
